@@ -1,5 +1,5 @@
-can2 = document.getElementById("can1");
-ctx = can2.getContext("2d");
+can1 = document.getElementById("can1");
+ctx = can1.getContext("2d");
 rover_image= "rover.png";
 mars_image= "mars.jpg";
 rover_X= 10;
@@ -18,7 +18,7 @@ function uploadrover(){
     ctx.drawImage(rover_tag,rover_X,rover_Y,rover_width,rover_height);
 }
 function uploadmars(){
-    ctx.drawImage(mars_tag, 0, 0,can2.width,can2.height);
+    ctx.drawImage(mars_tag, 0, 0,can1.width,can1.height);
 }
 window.addEventListener("keydown",my_keydown);
 function my_keydown(e){
